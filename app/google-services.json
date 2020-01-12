@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "772193096467",
+    "firebase_url": "https://homeshiftapp.firebaseio.com",
+    "project_id": "homeshiftapp",
+    "storage_bucket": "homeshiftapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772193096467:android:3c83093931dc83966140e6",
+        "android_client_info": {
+          "package_name": "com.example.home_shift_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772193096467-8u6f0fqs1sb74n7v6a05ini1aiklrbvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.home_shift_app",
+            "certificate_hash": "c3b664afa2135331142fe66e997de6b506a21122"
+          }
+        },
+        {
+          "client_id": "772193096467-51ovnn42bvndpmf5ie3vqln1gsvmv364.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR2fLKn0plFqJfJboFwqNyID8-wjOSOlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772193096467-51ovnn42bvndpmf5ie3vqln1gsvmv364.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
