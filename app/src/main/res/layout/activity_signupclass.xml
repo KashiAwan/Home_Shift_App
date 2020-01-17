@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signupclass">
+    tools:context=".Signupclass"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logooo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/signname"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/signNamee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/loginemail"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/signEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/loginpass"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/signpasswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        />
+
+    <Button
+        android:id="@+id/signupbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signupp"
+        android:layout_marginTop="20dp"
+        />
 
 </LinearLayout>
