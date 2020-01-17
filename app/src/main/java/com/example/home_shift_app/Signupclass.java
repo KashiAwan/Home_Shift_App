@@ -2,10 +2,12 @@ package com.example.home_shift_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -35,6 +37,11 @@ public class Signupclass extends AppCompatActivity {
                 myRef.child(emailll.getText().toString()).child("Email").setValue(emailll.getText().toString());
                 myRef.child(emailll.getText().toString()).child("Name").setValue(namee.getText().toString());
                 myRef.child(emailll.getText().toString()).child("Password").setValue(passs.getText().toString());
+
+                Toast.makeText(Signupclass.this, "Signup Successfull", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(Signupclass.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
