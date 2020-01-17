@@ -2,4 +2,10 @@
     <string name="app_name">Home_Shift_App</string>
 
     <string name="Weshift">We Shift</string>
+    <string name="loginemail">Email</string>
+    <string name="loginpass">Password</string>
+    <string name="loginbut">Login</string>
+    <string name="createnewone">No acount Yet? Creat one</string>
+    <string name="Weshift">We Shift</string>
+    <string name="Weshift">We Shift</string>
 </resources>
