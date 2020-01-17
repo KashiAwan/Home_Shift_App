@@ -32,9 +32,9 @@ public class Signupclass extends AppCompatActivity {
                 FirebaseDatabase database=FirebaseDatabase.getInstance();
                 DatabaseReference myRef= database.getReference("We Shift");
 
-                myRef.child("Userss").child("Email").setValue(emailll.getText().toString());
-                myRef.child("Userss").child(emailll.getText().toString()).child("Name").setValue(passs.getText().toString());
-                myRef.child("Userss").child(emailll.getText().toString()).child("Password").setValue(passs.getText().toString());
+                myRef.child(emailll.getText().toString()).child("Email").setValue(emailll.getText().toString());
+                myRef.child(emailll.getText().toString()).child("Name").setValue(namee.getText().toString());
+                myRef.child(emailll.getText().toString()).child("Password").setValue(passs.getText().toString());
             }
         });
 

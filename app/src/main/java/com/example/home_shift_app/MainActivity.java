@@ -55,13 +55,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void refffunction() {
 
-        refff = FirebaseDatabase.getInstance().getReference().child("We Shift");
+        refff = FirebaseDatabase.getInstance().getReference().child("We Shift").child(log_emaill.getText().toString());
 
         refff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String Email1 = dataSnapshot.child("Userss").getValue().toString();
-                String Password1 = dataSnapshot.child("Userss").child("Email").getValue().toString();
+                String Email1 = dataSnapshot.child("Email").getValue().toString();
+                String Password1 = dataSnapshot.child("Password").getValue().toString();
 
                 if (log_emaill.getText().toString().equals(Email1) && log_pass.getText().toString().equals(Password1)) {
                     minlocfun();
