@@ -34,9 +34,11 @@ public class Signupclass extends AppCompatActivity {
                 FirebaseDatabase database=FirebaseDatabase.getInstance();
                 DatabaseReference myRef= database.getReference("We Shift");
 
-                myRef.child(emailll.getText().toString()).child("Email").setValue(emailll.getText().toString());
-                myRef.child(emailll.getText().toString()).child("Name").setValue(namee.getText().toString());
-                myRef.child(emailll.getText().toString()).child("Password").setValue(passs.getText().toString());
+                String emailstring = emailll.getText().toString();
+
+                myRef.child(emailstring).child("Email").setValue(emailstring);
+                myRef.child(emailstring).child("Name").setValue(namee.getText().toString());
+                myRef.child(emailstring).child("Password").setValue(passs.getText().toString());
 
                 Toast.makeText(Signupclass.this, "Signup Successfull", Toast.LENGTH_SHORT).show();
 
