@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vehiclelabour"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pickupp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_pickup_truck"
+        android:text="@string/picckupp"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textSize="50sp"/>
+    <Button
+        android:id="@+id/minitruckk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_delivery_truck"
+        android:text="@string/minnitruck"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textSize="50sp"/>
+    <Button
+        android:id="@+id/truckk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_heavy_vehicle"
+        android:text="@string/truckk"
+        android:layout_weight="1"
+        android:paddingBottom="20pt"
+        android:textAlignment="textStart"
+        android:textSize="50sp"/>
+
+</LinearLayout>

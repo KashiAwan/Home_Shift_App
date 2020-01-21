@@ -8,4 +8,10 @@
     <string name="createnewone">No acount Yet? Creat one</string>
     <string name="signname">Name</string>
     <string name="signupp">Signup</string>
+
+    <string name="picckupp">Pickup</string>
+    <string name="dropoff">Drop off</string>
+    <string name="donnee">Done</string>
+    <string name="minnitruck">Mini Truck</string>
+    <string name="truckk">Truck</string>
 </resources>
