@@ -6,7 +6,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class UserDashboard extends AppCompatActivity {
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+
+public class UserDashboard extends AppCompatActivity implements OnMapReadyCallback {
 
     TextView pickuploc, dropofloc;
 
@@ -28,6 +31,11 @@ public class UserDashboard extends AppCompatActivity {
         dropofloc = findViewById(R.id.drpofloc);
 
 
+
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
 
     }
 }
