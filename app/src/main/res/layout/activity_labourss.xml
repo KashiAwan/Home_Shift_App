@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".labourss">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/pickupp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_labour"
+        android:text="@string/labour2"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textSize="40sp"/>
+    <Button
+        android:id="@+id/minitruckk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_labour"
+        android:text="@string/labour5"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textSize="40sp"/>
+    <Button
+        android:id="@+id/truckk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_labour"
+        android:text="@string/labour10"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textSize="40sp"/>
+</LinearLayout>

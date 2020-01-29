@@ -14,4 +14,9 @@
     <string name="donnee">Done</string>
     <string name="minnitruck">Mini Truck</string>
     <string name="truckk">Truck</string>
+
+    <string name="labour2">2 Labours</string>
+    <string name="labour5">5 Labours</string>
+    <string name="labour10">10 Labours</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

@@ -18,7 +18,7 @@
         android:layout_weight="0.1"/>
 
     <EditText
-        android:id="@+id/signNamee"
+        android:id="@+id/pickuploc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -42,9 +42,19 @@
             android:layout_weight="1"
             />
     </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:layout_gravity="end"/>
+        android:clickable="true"
+        app:srcCompat="@color/colorAccent" />
+
+
 </LinearLayout>
