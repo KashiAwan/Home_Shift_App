@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void minlocfun(){
-        Intent intent = new Intent(this, UserDashboard.class);
+        Intent intent = new Intent(this, Userdashboardmapbox.class);
         startActivity(intent);
     }
 }
