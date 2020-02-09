@@ -8,7 +8,7 @@
     tools:context=".labourss">
 
     <Button
-        android:id="@+id/pickupp"
+        android:id="@+id/twolabours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_labour"
@@ -17,7 +17,7 @@
         android:textAlignment="textStart"
         android:textSize="40sp"/>
     <Button
-        android:id="@+id/minitruckk"
+        android:id="@+id/fivelabours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_labour"
@@ -26,7 +26,7 @@
         android:textAlignment="textStart"
         android:textSize="40sp"/>
     <Button
-        android:id="@+id/truckk"
+        android:id="@+id/tenlabours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_labour"

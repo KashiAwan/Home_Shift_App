@@ -34,8 +34,8 @@
         <activity android:name=".Vehiclelabour" />
         <activity android:name=".Signupclass" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreen"></activity>
-        <activity android:name=".Userdashboardmapbox">
+        <activity android:name=".Userdashboardmapbox"></activity>
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

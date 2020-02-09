@@ -3,37 +3,21 @@ package com.example.home_shift_app;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.mapbox.api.directions.v5.models.DirectionsResponse;
-import com.mapbox.geojson.Feature;
-import com.mapbox.geojson.Point;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.mapbox.mapboxsdk.Mapbox;
-import com.mapbox.mapboxsdk.annotations.Icon;
-import com.mapbox.mapboxsdk.annotations.IconFactory;
-import com.mapbox.mapboxsdk.annotations.Marker;
-import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
-import com.mapbox.mapboxsdk.plugins.annotation.Symbol;
-import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
-import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
-import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
-import com.mapbox.services.android.navigation.ui.v5.route.NavigationMapRoute;
-import com.mapbox.services.android.navigation.v5.navigation.NavigationRoute;
-
-import java.util.Objects;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import timber.log.Timber;
 
 
 public class Userdashboardmapbox extends AppCompatActivity implements MapboxMap.OnMapClickListener {
@@ -70,8 +54,25 @@ public class Userdashboardmapbox extends AppCompatActivity implements MapboxMap.
             @Override
             public void onClick(View v) {
 
+                String signinemaill;
+                SharedPreferences sharedPreferences = getSharedPreferences("saveemail", MODE_PRIVATE);
+                signinemaill = sharedPreferences.getString("saveemaail", String.valueOf(MODE_PRIVATE));
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference myRef= database.getReference("We Shift list");
+
+                myRef.child(signinemaill).child("Pickup Location").setValue(pickupp.getText().toString());
+                myRef.child(signinemaill).child("Dropoff Location").setValue(droppofff.getText().toString());
+
+                minlocfun11();
+
             }
         });
+    }
+
+    public void minlocfun11(){
+        Intent intent = new Intent(this, Vehiclelabour.class);
+        startActivity(intent);
     }
 
     @Override
